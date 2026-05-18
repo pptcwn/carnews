@@ -141,3 +141,37 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* ── Blog: Editorial article typography (Round 3A) ── */
+.prose-article {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-foreground);
+}
+.prose-article p { margin: 1.1em 0; }
+.prose-article h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 2em 0 0.6em;
+  letter-spacing: -0.01em;
+}
+.prose-article h3 { font-size: 1.2rem; font-weight: 700; margin: 1.5em 0 0.5em; }
+.prose-article ul { list-style: disc; padding-left: 1.4em; margin: 1em 0; }
+.prose-article ul li { margin: 0.4em 0; }
+.prose-article blockquote {
+  border-left: 4px solid var(--color-primary);
+  padding: 0.5em 1em;
+  margin: 1.5em 0;
+  font-style: italic;
+  color: var(--color-muted-foreground);
+  background: var(--color-muted);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+@media (min-width: 768px) {
+  .prose-article { font-size: 1.075rem; }
+  .prose-article h2 { font-size: 1.75rem; }
+}
+
+/* ── Blog: Hide scrollbar utility for chip rows ── */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
